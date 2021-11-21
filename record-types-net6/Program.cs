@@ -1,5 +1,9 @@
 ﻿using System.Text;
 
+Point p1 = new(5, 6);
+Point p2 = p1 with { X = 10 };
+Console.WriteLine($"{p2}");
+
 Person person1 = new("Nancy", "Davolio");
 Person person2 = new("Nancy", "Davolio");
 Console.WriteLine(person1);
@@ -41,6 +45,8 @@ var temp1 = new DailyTemperature(10, 10);
 temp1.HighTemp = 11;
 var temp2 = new DailyTemperatureReadonly(10, 10);
 // temp2.HighTemp = 11; // ERROR
+
+public record Point(int X, int Y);
 
 public record Person(string FirstName, string LastName);
 
