@@ -2,13 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net48;netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
-    <RootNamespace>interpolated_string_handler_net6_perf</RootNamespace>
-    <ImplicitUsings>disable</ImplicitUsings>
-    <Nullable>annotations</Nullable>
+    <TargetFrameworks>net5.0;net6.0</TargetFrameworks>
+    <RootNamespace>nullable_type_parameter_net5_perf</RootNamespace>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Nullable>annotations</Nullable>
     <ServerGarbageCollection>true</ServerGarbageCollection>
-    <LangVersion>10</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
