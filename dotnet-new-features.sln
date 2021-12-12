@@ -41,7 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "assignment-and-declaration-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "default-constraint-net5", "default-constraint-net5\default-constraint-net5.csproj", "{A9D67787-CB87-4FFD-8B78-D5387A4981BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nullable-type-parameter-net5-perf", "nullable-type-parameter-net5-perf\nullable-type-parameter-net5-perf.csproj", "{6AB3348F-E858-4252-B34C-1770330B9FAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nullable-type-parameter-net5-perf", "nullable-type-parameter-net5-perf\nullable-type-parameter-net5-perf.csproj", "{6AB3348F-E858-4252-B34C-1770330B9FAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sealed-class-net6-perf", "sealed-class-net6-perf\sealed-class-net6-perf.csproj", "{743E0405-8012-43E4-BFE1-2B081CB69429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sealed-type-check-net6-perf", "sealed-type-check-net6-perf\sealed-type-check-net6-perf.csproj", "{7111CF69-A25B-48DB-90C3-43D6EE676B98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +133,14 @@ Global
 		{6AB3348F-E858-4252-B34C-1770330B9FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AB3348F-E858-4252-B34C-1770330B9FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AB3348F-E858-4252-B34C-1770330B9FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{743E0405-8012-43E4-BFE1-2B081CB69429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{743E0405-8012-43E4-BFE1-2B081CB69429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{743E0405-8012-43E4-BFE1-2B081CB69429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{743E0405-8012-43E4-BFE1-2B081CB69429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7111CF69-A25B-48DB-90C3-43D6EE676B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7111CF69-A25B-48DB-90C3-43D6EE676B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7111CF69-A25B-48DB-90C3-43D6EE676B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7111CF69-A25B-48DB-90C3-43D6EE676B98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
