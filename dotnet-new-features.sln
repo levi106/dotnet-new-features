@@ -47,6 +47,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sealed-class-net6-perf", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sealed-type-check-net6-perf", "sealed-type-check-net6-perf\sealed-type-check-net6-perf.csproj", "{7111CF69-A25B-48DB-90C3-43D6EE676B98}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sealed-array-net6-perf", "sealed-array-net6-perf\sealed-array-net6-perf.csproj", "{C83E2BE6-4736-4C9A-9CBE-166A4E6969BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sealed-span-net6-perf", "sealed-span-net6-perf\sealed-span-net6-perf.csproj", "{D7842CE8-FB36-4E0F-A592-744E530CDB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "read-int64-net6-perf", "read-int64-net6-perf\read-int64-net6-perf.csproj", "{C58D494A-5395-4413-A4DB-719F079BD445}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "int-parse-net6-perf", "int-parse-net6-perf\int-parse-net6-perf.csproj", "{E6DE2C74-2E7D-453E-BACF-1808D7259B87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +149,22 @@ Global
 		{7111CF69-A25B-48DB-90C3-43D6EE676B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7111CF69-A25B-48DB-90C3-43D6EE676B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7111CF69-A25B-48DB-90C3-43D6EE676B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C83E2BE6-4736-4C9A-9CBE-166A4E6969BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C83E2BE6-4736-4C9A-9CBE-166A4E6969BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C83E2BE6-4736-4C9A-9CBE-166A4E6969BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C83E2BE6-4736-4C9A-9CBE-166A4E6969BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7842CE8-FB36-4E0F-A592-744E530CDB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7842CE8-FB36-4E0F-A592-744E530CDB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7842CE8-FB36-4E0F-A592-744E530CDB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7842CE8-FB36-4E0F-A592-744E530CDB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C58D494A-5395-4413-A4DB-719F079BD445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C58D494A-5395-4413-A4DB-719F079BD445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C58D494A-5395-4413-A4DB-719F079BD445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C58D494A-5395-4413-A4DB-719F079BD445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6DE2C74-2E7D-453E-BACF-1808D7259B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6DE2C74-2E7D-453E-BACF-1808D7259B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6DE2C74-2E7D-453E-BACF-1808D7259B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6DE2C74-2E7D-453E-BACF-1808D7259B87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
