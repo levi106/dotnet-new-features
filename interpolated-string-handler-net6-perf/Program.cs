@@ -50,16 +50,45 @@ public class Program
                                                  //.WithSummaryStyle(new SummaryStyle(CultureInfo.InvariantCulture, printUnitsInHeader: false, SizeUnit.B, TimeUnit.Microsecond))
             );
 
-    private int v1 = 100;
-    private int v2 = 200;
-    private int v3 = 300;
-    private int v4 = 400;
+    private int Major = 6;
+    private int Minor = 0;
+    private int Build = 100;
+    private int Revision = 21380;
 
-    [Benchmark]
+    [Benchmark(Baseline = true)]
     public string StringFormat()
-        => string.Format("{0}, {1}, {2}, {3}", v1, v2, v3, v4);
+    {
+        object[] array = new object[4];
+        array[0] = Major;
+        array[1] = Minor;
+        array[2] = Build;
+        array[3] = Revision;
+        return String.Format("{0}.{1}.{2}.{3}", array);
+    }
 
     [Benchmark]
-    public string InterpolatedStringFormatter()
-        => $"{v1}, {v2}, {v3}, {v4}";
+    public string InterpolatedString()
+        => $"{Major}.{Minor}.{Build}.{Revision}";
+
+    [Benchmark]
+    public string InitialBufferSpace()
+    => String.Create(null, stackalloc char[64], $"{Major}.{Minor}.{Build}.{Revision}");
+
+    [Benchmark]
+    public string InitialBufferSpaceWithFormatProvider()
+    => String.Create(CultureInfo.InvariantCulture, stackalloc char[64], $"{Major}.{Minor}.{Build}.{Revision}");
+
+    [Benchmark]
+    public string InterpolatedStringHandler()
+    {
+        var h = new DefaultInterpolatedStringHandler(3, 4);
+        h.AppendFormatted(Major);
+        h.AppendLiteral(".");
+        h.AppendFormatted(Minor);
+        h.AppendLiteral(".");
+        h.AppendFormatted(Build);
+        h.AppendLiteral(".");
+        h.AppendFormatted(Revision);
+        return h.ToStringAndClear();
+    }
 }

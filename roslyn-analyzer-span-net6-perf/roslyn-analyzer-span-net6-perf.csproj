@@ -1,14 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net6.0</TargetFrameworks>
-    <RootNamespace>interpolated_string_handler_net6_perf</RootNamespace>
-    <ImplicitUsings>disable</ImplicitUsings>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>roslyn_analyzer_span_net6_perf</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>annotations</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <ServerGarbageCollection>true</ServerGarbageCollection>
     <LangVersion>10</LangVersion>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
   </PropertyGroup>
 
   <ItemGroup>
