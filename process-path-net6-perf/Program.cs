@@ -18,11 +18,3 @@ public partial class Program
     public string GetPathViaEnvironment() =>
         Environment.ProcessPath;
 }
-
-var data = await File.ReadAllBytesAsync(@"c:large_file.json");
-
-// Safe but slow.
-var copied = ByteString.CopyFrom(data);
-
-// Unsafe but fast. Useful if you know data won't change.
-var wrapped = UnsafeByteOperations.UnsafeWrap(data);
