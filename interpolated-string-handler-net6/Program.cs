@@ -73,9 +73,9 @@ public ref struct LogInterpolatedStringHandler
         Console.WriteLine($"\tliteral length: {literalLength}, formattedCount: {formattedCount}");
     }
 
-    public LogInterpolatedStringHandler(int literalLength, int formattedCount, Logger logger, LogLevel logLevel)
+    public LogInterpolatedStringHandler(int literalLength, int formattedCount, Logger logger, LogLevel logLevel, out bool isEnabled)
     {
-        enabled = logger.EnabledLevel >= logLevel;
+        isEnabled = enabled = logger.EnabledLevel >= logLevel;
         Console.WriteLine($"\tliteral length: {literalLength}, formattedCount: {formattedCount}, logLevel: {logLevel}");
         builder = new StringBuilder(literalLength);
     }
